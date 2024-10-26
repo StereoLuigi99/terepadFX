@@ -88,12 +88,6 @@
     <Compile Include="about.vb">
       <SubType>Form</SubType>
     </Compile>
-    <Compile Include="aiprompter.Designer.vb">
-      <DependentUpon>aiprompter.vb</DependentUpon>
-    </Compile>
-    <Compile Include="aiprompter.vb">
-      <SubType>Form</SubType>
-    </Compile>
     <Compile Include="calcu.Designer.vb">
       <DependentUpon>calcu.vb</DependentUpon>
     </Compile>
@@ -132,9 +126,6 @@
   <ItemGroup>
     <EmbeddedResource Include="about.resx">
       <DependentUpon>about.vb</DependentUpon>
-    </EmbeddedResource>
-    <EmbeddedResource Include="aiprompter.resx">
-      <DependentUpon>aiprompter.vb</DependentUpon>
     </EmbeddedResource>
     <EmbeddedResource Include="calcu.resx">
       <DependentUpon>calcu.vb</DependentUpon>
@@ -176,6 +167,7 @@
   </ItemGroup>
   <ItemGroup>
     <Content Include="ohaa.ico" />
+    <None Include="Resources\terepadFX.png" />
   </ItemGroup>
   <Import Project="$(MSBuildToolsPath)\Microsoft.VisualBasic.targets" />
 </Project>
