@@ -38,7 +38,6 @@ Partial Class Form1
         Me.DüzenleToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TümünüPanoyaKopyalaToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.TarihVeSaatiToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
-        Me.AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.GörünümToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.YazıTipiVeBoyotunuDeğiştirToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.ConsolasYazıTipineGeçToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
@@ -78,26 +77,26 @@ Partial Class Form1
         'AçToolStripMenuItem1
         '
         Me.AçToolStripMenuItem1.Name = "AçToolStripMenuItem1"
-        Me.AçToolStripMenuItem1.Size = New System.Drawing.Size(119, 22)
+        Me.AçToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.AçToolStripMenuItem1.Text = "Aç"
         '
         'kaydetDosya
         '
         Me.kaydetDosya.Name = "kaydetDosya"
-        Me.kaydetDosya.Size = New System.Drawing.Size(119, 22)
+        Me.kaydetDosya.Size = New System.Drawing.Size(180, 22)
         Me.kaydetDosya.Text = "Kaydet"
         '
         'YeniToolStripMenuItem
         '
         Me.YeniToolStripMenuItem.Name = "YeniToolStripMenuItem"
-        Me.YeniToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.YeniToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.YeniToolStripMenuItem.Text = "Yeni"
         '
         'OtokayıtToolStripMenuItem
         '
         Me.OtokayıtToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AçToolStripMenuItem, Me.KapatToolStripMenuItem, Me.BuNedirToolStripMenuItem})
         Me.OtokayıtToolStripMenuItem.Name = "OtokayıtToolStripMenuItem"
-        Me.OtokayıtToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.OtokayıtToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OtokayıtToolStripMenuItem.Text = "Otokayıt"
         '
         'AçToolStripMenuItem
@@ -131,12 +130,12 @@ Partial Class Form1
         'ÇıkışToolStripMenuItem
         '
         Me.ÇıkışToolStripMenuItem.Name = "ÇıkışToolStripMenuItem"
-        Me.ÇıkışToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ÇıkışToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ÇıkışToolStripMenuItem.Text = "Çıkış"
         '
         'DüzenleToolStripMenuItem
         '
-        Me.DüzenleToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TümünüPanoyaKopyalaToolStripMenuItem, Me.TarihVeSaatiToolStripMenuItem, Me.AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem})
+        Me.DüzenleToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TümünüPanoyaKopyalaToolStripMenuItem, Me.TarihVeSaatiToolStripMenuItem})
         Me.DüzenleToolStripMenuItem.Name = "DüzenleToolStripMenuItem"
         Me.DüzenleToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.DüzenleToolStripMenuItem.Text = "Düzenle"
@@ -151,13 +150,7 @@ Partial Class Form1
         '
         Me.TarihVeSaatiToolStripMenuItem.Name = "TarihVeSaatiToolStripMenuItem"
         Me.TarihVeSaatiToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
-        Me.TarihVeSaatiToolStripMenuItem.Text = "Tarih ve saati işle"
-        '
-        'AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem
-        '
-        Me.AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem.Name = "AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem"
-        Me.AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
-        Me.AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem.Text = "Hesap Makinesi"
+        Me.TarihVeSaatiToolStripMenuItem.Text = "Tarih ve saati yazdır"
         '
         'GörünümToolStripMenuItem
         '
@@ -198,8 +191,8 @@ Partial Class Form1
         'TerepadHakkındaToolStripMenuItem
         '
         Me.TerepadHakkındaToolStripMenuItem.Name = "TerepadHakkındaToolStripMenuItem"
-        Me.TerepadHakkındaToolStripMenuItem.Size = New System.Drawing.Size(167, 22)
-        Me.TerepadHakkındaToolStripMenuItem.Text = "terepad Hakkında"
+        Me.TerepadHakkındaToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.TerepadHakkındaToolStripMenuItem.Text = "terepadFX Hakkında"
         '
         'MenuStrip1
         '
@@ -271,7 +264,6 @@ Partial Class Form1
     Friend WithEvents DüzenleToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TümünüPanoyaKopyalaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TarihVeSaatiToolStripMenuItem As ToolStripMenuItem
-    Friend WithEvents AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents GörünümToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents YazıTipiVeBoyotunuDeğiştirToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents ConsolasYazıTipineGeçToolStripMenuItem As ToolStripMenuItem
