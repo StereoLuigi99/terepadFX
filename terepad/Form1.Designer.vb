@@ -224,13 +224,13 @@ Partial Class Form1
         '
         'durumL
         '
-        Me.durumL.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
+        Me.durumL.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Left), System.Windows.Forms.AnchorStyles)
         Me.durumL.AutoSize = True
         Me.durumL.Font = New System.Drawing.Font("Segoe UI", 9.0!)
         Me.durumL.Location = New System.Drawing.Point(4, 442)
         Me.durumL.Name = "durumL"
         Me.durumL.Size = New System.Drawing.Size(69, 15)
-        Me.durumL.TabIndex = 5
+        Me.durumL.TabIndex = 4
         Me.durumL.Text = "Hey! Selam."
         '
         'Form1
