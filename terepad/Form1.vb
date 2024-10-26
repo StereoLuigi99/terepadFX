@@ -322,7 +322,7 @@ Public Class Form1
         about.Show()
     End Sub
 
-    Private Sub AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem.Click
+    Private Sub AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem_Click(sender As Object, e As EventArgs) 
         calcu.Show()
         calcu.Text = "Şu anda hesap makinesi yapmaya üşendiğimden boş bir forma bakıyorsun."
     End Sub
