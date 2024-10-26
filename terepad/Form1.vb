@@ -322,12 +322,6 @@ Public Class Form1
         about.Show()
     End Sub
 
-    Private Sub AnlıkDolarTLHesaplamasınıMetneGeçirToolStripMenuItem_Click(sender As Object, e As EventArgs) 
-        calcu.Show()
-        calcu.Text = "Şu anda hesap makinesi yapmaya üşendiğimden boş bir forma bakıyorsun."
-    End Sub
-
-
     Dim filePath As String = ""
     Dim otokayit As Boolean = False
     Dim fileName As String = ""
@@ -572,6 +566,18 @@ Public Class Form1
 
     Private Sub YapışkanNotlarModuToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles YapışkanNotlarModuToolStripMenuItem.Click
         yapiskannotlar()
+
+    End Sub
+
+    Private Sub TarihVeSaatiToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TarihVeSaatiToolStripMenuItem.Click
+        Dim cevirilentext As String = ""
+
+        cevirilentext = Me.metinbox.Text & DateTime.Now()
+
+        Me.metinbox.Text() = cevirilentext
+
+        metinbox.SelectionStart = metinbox.Text.Length
+        metinbox.ScrollToCaret()
 
     End Sub
 End Class

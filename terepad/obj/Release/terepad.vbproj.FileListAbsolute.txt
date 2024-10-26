@@ -44,7 +44,6 @@ C:\Users\Stereo\Desktop\terepadFX\terepad\bin\Release\Newtonsoft.Json.dll
 C:\Users\Stereo\Desktop\terepadFX\terepad\bin\Release\Newtonsoft.Json.xml
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.vbproj.AssemblyReference.cache
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.about.resources
-C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.calcu.resources
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.Form1.resources
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.kapatuyari.resources
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.Resources.resources

@@ -77,26 +77,26 @@ Partial Class Form1
         'AçToolStripMenuItem1
         '
         Me.AçToolStripMenuItem1.Name = "AçToolStripMenuItem1"
-        Me.AçToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
+        Me.AçToolStripMenuItem1.Size = New System.Drawing.Size(119, 22)
         Me.AçToolStripMenuItem1.Text = "Aç"
         '
         'kaydetDosya
         '
         Me.kaydetDosya.Name = "kaydetDosya"
-        Me.kaydetDosya.Size = New System.Drawing.Size(180, 22)
+        Me.kaydetDosya.Size = New System.Drawing.Size(119, 22)
         Me.kaydetDosya.Text = "Kaydet"
         '
         'YeniToolStripMenuItem
         '
         Me.YeniToolStripMenuItem.Name = "YeniToolStripMenuItem"
-        Me.YeniToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.YeniToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.YeniToolStripMenuItem.Text = "Yeni"
         '
         'OtokayıtToolStripMenuItem
         '
         Me.OtokayıtToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AçToolStripMenuItem, Me.KapatToolStripMenuItem, Me.BuNedirToolStripMenuItem})
         Me.OtokayıtToolStripMenuItem.Name = "OtokayıtToolStripMenuItem"
-        Me.OtokayıtToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.OtokayıtToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.OtokayıtToolStripMenuItem.Text = "Otokayıt"
         '
         'AçToolStripMenuItem
@@ -130,7 +130,7 @@ Partial Class Form1
         'ÇıkışToolStripMenuItem
         '
         Me.ÇıkışToolStripMenuItem.Name = "ÇıkışToolStripMenuItem"
-        Me.ÇıkışToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
+        Me.ÇıkışToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
         Me.ÇıkışToolStripMenuItem.Text = "Çıkış"
         '
         'DüzenleToolStripMenuItem
