@@ -93,7 +93,13 @@ Public Class Form1
 
     Private Sub TümünüPanoyaKopyalaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TümünüPanoyaKopyalaToolStripMenuItem.Click
         Dim metinkomple As String = metinbox.Text()
-        Clipboard.SetText(metinkomple)
+        If String.IsNullOrEmpty(metinbox.Text()) Then
+            Try
+                Clipboard.SetText(metinkomple)
+            Catch ex As ArgumentNullException
+                MessageBox.Show("Neyi kopyalıyon la eşek! :D", "terepadFX", MessageBoxButtons.OK, MessageBoxIcon.Question)
+            End Try
+        End If
         durumL.Text = "Bütün metin panoya kopyalandı."
     End Sub
 

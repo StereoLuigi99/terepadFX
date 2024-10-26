@@ -3,12 +3,12 @@
   "WorkspaceRootPath": "C:\\Users\\Stereo\\Desktop\\terepadFX\\",
   "Documents": [
     {
-      "AbsoluteMoniker": "D:0:0:{0E7DBE45-4D32-41E7-940E-5FE2AB338775}|terepad\\terepad.vbproj|c:\\users\\stereo\\desktop\\terepadfx\\terepad\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
-      "RelativeMoniker": "D:0:0:{0E7DBE45-4D32-41E7-940E-5FE2AB338775}|terepad\\terepad.vbproj|solutionrelative:terepad\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
-    },
-    {
       "AbsoluteMoniker": "D:0:0:{0E7DBE45-4D32-41E7-940E-5FE2AB338775}|terepad\\terepad.vbproj|c:\\users\\stereo\\desktop\\terepadfx\\terepad\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form",
       "RelativeMoniker": "D:0:0:{0E7DBE45-4D32-41E7-940E-5FE2AB338775}|terepad\\terepad.vbproj|solutionrelative:terepad\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}|Form"
+    },
+    {
+      "AbsoluteMoniker": "D:0:0:{0E7DBE45-4D32-41E7-940E-5FE2AB338775}|terepad\\terepad.vbproj|C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}",
+      "RelativeMoniker": "D:0:0:{0E7DBE45-4D32-41E7-940E-5FE2AB338775}|terepad\\terepad.vbproj|solutionrelative:terepad\\form1.vb||{2C015C70-C72C-11D0-88C3-00A0C9110049}"
     }
   ],
   "DocumentGroupContainers": [
@@ -18,7 +18,7 @@
       "DocumentGroups": [
         {
           "DockedWidth": 200,
-          "SelectedChildIndex": 1,
+          "SelectedChildIndex": 2,
           "Children": [
             {
               "$type": "Bookmark",
@@ -26,25 +26,25 @@
             },
             {
               "$type": "Document",
-              "DocumentIndex": 0,
+              "DocumentIndex": 1,
               "Title": "Form1.vb",
               "DocumentMoniker": "C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\Form1.vb",
               "RelativeDocumentMoniker": "terepad\\Form1.vb",
-              "ToolTip": "C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\Form1.vb*",
-              "RelativeToolTip": "terepad\\Form1.vb*",
-              "ViewState": "AgIAADsBAAAAAAAAAAApwEIBAAALAAAAAAAAAA==",
+              "ToolTip": "C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\Form1.vb",
+              "RelativeToolTip": "terepad\\Form1.vb",
+              "ViewState": "AgIAAC0CAAAAAAAAAAArwDwCAAAoAAAAAAAAAA==",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-26T19:19:01.277Z",
               "EditorCaption": ""
             },
             {
               "$type": "Document",
-              "DocumentIndex": 1,
+              "DocumentIndex": 0,
               "Title": "Form1.vb [Tasar\u0131m]",
               "DocumentMoniker": "C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\Form1.vb",
               "RelativeDocumentMoniker": "terepad\\Form1.vb",
-              "ToolTip": "C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\Form1.vb [Tasar\u0131m]*",
-              "RelativeToolTip": "terepad\\Form1.vb [Tasar\u0131m]*",
+              "ToolTip": "C:\\Users\\Stereo\\Desktop\\terepadFX\\terepad\\Form1.vb [Tasar\u0131m]",
+              "RelativeToolTip": "terepad\\Form1.vb [Tasar\u0131m]",
               "Icon": "ae27a6b0-e345-4288-96df-5eaf394ee369.003361|",
               "WhenOpened": "2024-10-26T19:15:54.484Z",
               "EditorCaption": " [Tasar\u0131m]"
