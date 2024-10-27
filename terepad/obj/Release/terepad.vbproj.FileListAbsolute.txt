@@ -53,3 +53,4 @@ C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.vbproj.Up2Date
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.exe
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.xml
 C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.pdb
+C:\Users\Stereo\Desktop\terepadFX\terepad\obj\Release\terepad.AIPrompter.resources

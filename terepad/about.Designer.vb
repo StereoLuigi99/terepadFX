@@ -63,9 +63,9 @@ Partial Class about
         Me.Label3.ForeColor = System.Drawing.SystemColors.ButtonFace
         Me.Label3.Location = New System.Drawing.Point(93, 56)
         Me.Label3.Name = "Label3"
-        Me.Label3.Size = New System.Drawing.Size(157, 13)
+        Me.Label3.Size = New System.Drawing.Size(226, 13)
         Me.Label3.TabIndex = 3
-        Me.Label3.Text = "Sürüm: 1.21 (v1.2'den forklandı)"
+        Me.Label3.Text = "Sürüm: 1.41 (Fork v1.2, özellikler v1.4 ile aynı.)"
         '
         'Label4
         '

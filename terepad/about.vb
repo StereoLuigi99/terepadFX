@@ -98,7 +98,4 @@ Public Class about
     Private Sub PictureBox1_Click(sender As Object, e As EventArgs) Handles PictureBox1.Click
         Process.Start("https://github.com/StereoLuigi99/terepadFX")
     End Sub
-    Private Sub Label1_Click(sender As Object, e As EventArgs) Handles Label1.Click
-        Process.Start("https://github.com/StereoLuigi99/terepadFX")
-    End Sub
 End Class

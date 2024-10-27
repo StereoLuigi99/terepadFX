@@ -48,6 +48,7 @@ Partial Class Form1
         Me.BindingSource1 = New System.Windows.Forms.BindingSource(Me.components)
         Me.Label1 = New System.Windows.Forms.Label()
         Me.durumL = New System.Windows.Forms.Label()
+        Me.AIPrompteriAçToolStripMenuItem = New System.Windows.Forms.ToolStripMenuItem()
         Me.MenuStrip1.SuspendLayout()
         CType(Me.BindingSource1, System.ComponentModel.ISupportInitialize).BeginInit()
         Me.SuspendLayout()
@@ -77,26 +78,26 @@ Partial Class Form1
         'AçToolStripMenuItem1
         '
         Me.AçToolStripMenuItem1.Name = "AçToolStripMenuItem1"
-        Me.AçToolStripMenuItem1.Size = New System.Drawing.Size(119, 22)
+        Me.AçToolStripMenuItem1.Size = New System.Drawing.Size(180, 22)
         Me.AçToolStripMenuItem1.Text = "Aç"
         '
         'kaydetDosya
         '
         Me.kaydetDosya.Name = "kaydetDosya"
-        Me.kaydetDosya.Size = New System.Drawing.Size(119, 22)
+        Me.kaydetDosya.Size = New System.Drawing.Size(180, 22)
         Me.kaydetDosya.Text = "Kaydet"
         '
         'YeniToolStripMenuItem
         '
         Me.YeniToolStripMenuItem.Name = "YeniToolStripMenuItem"
-        Me.YeniToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.YeniToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.YeniToolStripMenuItem.Text = "Yeni"
         '
         'OtokayıtToolStripMenuItem
         '
         Me.OtokayıtToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.AçToolStripMenuItem, Me.KapatToolStripMenuItem, Me.BuNedirToolStripMenuItem})
         Me.OtokayıtToolStripMenuItem.Name = "OtokayıtToolStripMenuItem"
-        Me.OtokayıtToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.OtokayıtToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.OtokayıtToolStripMenuItem.Text = "Otokayıt"
         '
         'AçToolStripMenuItem
@@ -130,12 +131,12 @@ Partial Class Form1
         'ÇıkışToolStripMenuItem
         '
         Me.ÇıkışToolStripMenuItem.Name = "ÇıkışToolStripMenuItem"
-        Me.ÇıkışToolStripMenuItem.Size = New System.Drawing.Size(119, 22)
+        Me.ÇıkışToolStripMenuItem.Size = New System.Drawing.Size(180, 22)
         Me.ÇıkışToolStripMenuItem.Text = "Çıkış"
         '
         'DüzenleToolStripMenuItem
         '
-        Me.DüzenleToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TümünüPanoyaKopyalaToolStripMenuItem, Me.TarihVeSaatiToolStripMenuItem})
+        Me.DüzenleToolStripMenuItem.DropDownItems.AddRange(New System.Windows.Forms.ToolStripItem() {Me.TümünüPanoyaKopyalaToolStripMenuItem, Me.TarihVeSaatiToolStripMenuItem, Me.AIPrompteriAçToolStripMenuItem})
         Me.DüzenleToolStripMenuItem.Name = "DüzenleToolStripMenuItem"
         Me.DüzenleToolStripMenuItem.Size = New System.Drawing.Size(61, 20)
         Me.DüzenleToolStripMenuItem.Text = "Düzenle"
@@ -207,13 +208,13 @@ Partial Class Form1
         'Label1
         '
         Me.Label1.Anchor = CType((System.Windows.Forms.AnchorStyles.Bottom Or System.Windows.Forms.AnchorStyles.Right), System.Windows.Forms.AnchorStyles)
-        Me.Label1.AutoSize = True
         Me.Label1.Font = New System.Drawing.Font("Segoe UI", 9.0!)
-        Me.Label1.Location = New System.Drawing.Point(741, 442)
+        Me.Label1.Location = New System.Drawing.Point(711, 442)
         Me.Label1.Name = "Label1"
-        Me.Label1.Size = New System.Drawing.Size(125, 15)
+        Me.Label1.Size = New System.Drawing.Size(168, 15)
         Me.Label1.TabIndex = 4
-        Me.Label1.Text = "Bu dosyada 0 karakter."
+        Me.Label1.Text = "Karakter Sayısı: 0"
+        Me.Label1.TextAlign = System.Drawing.ContentAlignment.BottomRight
         '
         'durumL
         '
@@ -225,6 +226,12 @@ Partial Class Form1
         Me.durumL.Size = New System.Drawing.Size(69, 15)
         Me.durumL.TabIndex = 4
         Me.durumL.Text = "Hey! Selam."
+        '
+        'AIPrompteriAçToolStripMenuItem
+        '
+        Me.AIPrompteriAçToolStripMenuItem.Name = "AIPrompteriAçToolStripMenuItem"
+        Me.AIPrompteriAçToolStripMenuItem.Size = New System.Drawing.Size(205, 22)
+        Me.AIPrompteriAçToolStripMenuItem.Text = "Çeviriciyi aç"
         '
         'Form1
         '
@@ -271,6 +278,7 @@ Partial Class Form1
     Friend WithEvents TerepadBetaV03ToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents TerepadHakkındaToolStripMenuItem As ToolStripMenuItem
     Friend WithEvents MenuStrip1 As MenuStrip
-    Friend WithEvents Label1 As Label
     Friend WithEvents durumL As Label
+    Friend WithEvents Label1 As Label
+    Friend WithEvents AIPrompteriAçToolStripMenuItem As ToolStripMenuItem
 End Class

@@ -1,6 +1,7 @@
 ﻿Imports System.IO
 Imports System.Runtime.InteropServices
 Imports System.Security.Cryptography
+Imports System.Windows.Forms
 
 Public Class Form1
     Dim selectedFilePath As String
@@ -20,9 +21,8 @@ Public Class Form1
 
                 Dim saveFileDialog1 As New SaveFileDialog()
 
-                ' Filtreyi ayarla (Sadece .txt dosyalarını kaydetmek için)
-                saveFileDialog1.Filter = "Text File (*.txt)|*.txt|All Files (*.*)|*.*"
-                saveFileDialog1.Title = "Metni Kaydet"
+                saveFileDialog1.Filter = "All Files (*.*)|*.*"
+                saveFileDialog1.Title = "Dosyayı Kaydet"
 
                 ' Kullanıcı 'Kaydet' butonuna tıklarsa
                 If saveFileDialog1.ShowDialog() = DialogResult.OK Then
@@ -93,14 +93,15 @@ Public Class Form1
 
     Private Sub TümünüPanoyaKopyalaToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles TümünüPanoyaKopyalaToolStripMenuItem.Click
         Dim metinkomple As String = metinbox.Text()
-        If String.IsNullOrEmpty(metinbox.Text()) Then
-            Try
-                Clipboard.SetText(metinkomple)
-            Catch ex As ArgumentNullException
-                MessageBox.Show("Neyi kopyalıyon la eşek! :D", "terepadFX", MessageBoxButtons.OK, MessageBoxIcon.Question)
-            End Try
+        Try
+            Clipboard.SetText(metinkomple)
+        Catch ex As ArgumentNullException
+            MessageBox.Show("Neyi kopyalıyon la eşek! :D", "terepadFX", MessageBoxButtons.OK, MessageBoxIcon.Question)
+            durumL.Text = "Hiçliği kopyalayabileceğini mi zannettin?"
+        End Try
+        If String.IsNullOrEmpty(metinkomple) = False Then
+            durumL.Text = "Bütün metin panoya kopyalandı."
         End If
-        durumL.Text = "Bütün metin panoya kopyalandı."
     End Sub
 
     Private Sub KaydetToolStripMenuItem_Click(sender As Object, e As EventArgs)
@@ -229,9 +230,8 @@ Public Class Form1
 
                 Dim saveFileDialog1 As New SaveFileDialog()
 
-                ' Filtreyi ayarla (Sadece .txt dosyalarını kaydetmek için)
-                saveFileDialog1.Filter = "Text File (*.txt)|*.txt|All Files (*.*)|*.*"
-                saveFileDialog1.Title = "Metni Kaydet"
+                saveFileDialog1.Filter = "All Files (*.*)|*.*"
+                saveFileDialog1.Title = "Dosyayı Kaydet"
 
                 ' Kullanıcı 'Kaydet' butonuna tıklarsa
                 If saveFileDialog1.ShowDialog() = DialogResult.OK Then
@@ -337,8 +337,7 @@ Public Class Form1
         ' OpenFileDialog oluştur
         Dim ofd As New OpenFileDialog()
 
-        ' .txt dosyalarını filtrele
-        ofd.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
+        ofd.Filter = "All Files (*.*)|*.*"
         ofd.Title = "Otokayıt yapılacak dosyayı seçin."
 
         ' OpenFileDialog'u göster ve dosya seçimi yapıldıysa devam et
@@ -365,7 +364,7 @@ Public Class Form1
 
         ' TextBox1 içindeki harflerin sayısını değişkene atayın
         harfSayisi = metinbox.Text.Length
-        Label1.Text = $"Bu dosyada {harfSayisi} karakter."
+        Label1.Text = $"Karakter Sayısı: {harfSayisi}"
     End Sub
 
     Private Sub KapatToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles KapatToolStripMenuItem.Click
@@ -402,9 +401,8 @@ Public Class Form1
             ' OpenFileDialog oluştur
             Dim ofd As New OpenFileDialog()
 
-            ' .txt dosyalarını filtrele
-            ofd.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
-            ofd.Title = "Bir .txt dosyası seçin"
+            ofd.Filter = "All Files (*.*)|*.*"
+            ofd.Title = "Herhangi bir dosya seçin"
 
             ' OpenFileDialog'u göster ve dosya seçimi yapıldıysa devam et
             If ofd.ShowDialog() = DialogResult.OK Then
@@ -433,6 +431,7 @@ Public Class Form1
 
     Public altbarCount = -1
     Public lightDarkCount = -1
+    Public altbarPlace = -1
 
     ' Klavyeden bir tuşa basıldığında çalışacak olay
     Private Sub Form1_KeyDown(sender As Object, e As KeyEventArgs) Handles Me.KeyDown
@@ -491,6 +490,29 @@ Public Class Form1
             End If
         End If
 
+        If e.KeyCode = Keys.F4 Then
+            altbarPlace = altbarPlace + 1
+            If altbarPlace Mod 2 = 0 Then
+                Me.WindowState = FormWindowState.Normal
+                Me.Width = 900
+                Me.Height = 500
+                metinbox.Location = New Point(-5, -2)
+                metinbox.Width = 889
+                metinbox.Height = 439
+                MenuStrip1.Dock = DockStyle.Bottom
+                durumL.Location = New Point(281, 442)
+            End If
+            If altbarPlace Mod 2 = 1 Then
+                Me.WindowState = FormWindowState.Normal
+                Me.Width = 900
+                Me.Height = 500
+                metinbox.Location = New Point(-5, 27)
+                metinbox.Height = 410
+                MenuStrip1.Dock = DockStyle.Top
+                durumL.Location = New Point(4, 442)
+            End If
+        End If
+
         If e.KeyCode = Keys.Escape Then
             alreadyPrompted = True
             durumL.Text = "Olamaz. terepadFX kapatıldı. Vay esek kodlara bakıyor :D"
@@ -513,15 +535,17 @@ Public Class Form1
             eventCounter += 1
 
             ' İlk olay (1. tetikleme)
-            If eventCounter = 1 Or eventCounter = 5 Or eventCounter = 9 Or eventCounter = 13 Or eventCounter = 17 Or eventCounter = 21 Then
+            If eventCounter = 1 Or eventCounter = 6 Or eventCounter = 11 Or eventCounter = 16 Or eventCounter = 21 Then
                 durumL.Text = "Bir dosya açmak için Ctrl+O tuşuna basın."
-            ElseIf eventCounter = 2 Or eventCounter = 6 Or eventCounter = 10 Or eventCounter = 14 Or eventCounter = 18 Or eventCounter = 22 Then
+            ElseIf eventCounter = 2 Or eventCounter = 7 Or eventCounter = 12 Or eventCounter = 17 Or eventCounter = 22 Then
                 durumL.Text = "Dosyayı kaydetmek için Ctrl+S tuşuna basın."
-            ElseIf eventCounter = 3 Or eventCounter = 7 Or eventCounter = 11 Or eventCounter = 15 Or eventCounter = 19 Or eventCounter = 23 Then
+            ElseIf eventCounter = 3 Or eventCounter = 8 Or  eventCounter = 13 Or eventCounter = 18 Or eventCounter = 23 Then
                 durumL.Text = "AltBar'ı kapatıp açmak için F2 tuşuna basın."
-            ElseIf eventCounter = 4 Or eventCounter = 8 Or eventCounter = 12 Or eventCounter = 16 Or eventCounter = 20 Or eventCounter = 24 Then
+            ElseIf eventCounter = 4 Or eventCounter = 9 Or eventCounter = 14 Or eventCounter = 19 Or eventCounter = 24 Then
                 durumL.Text = "Açık/karanlık mod arası geçiş için F3 tuşuna basın."
-            ElseIf eventCounter > 24 Then
+            ElseIf eventCounter = 5 Or eventCounter = 10 Or eventCounter = 15 Or eventCounter = 20 Or eventCounter = 25 Then
+                durumL.Text = "AltBar'ın konumunu değiştirmek için F4 tuşuna basın."
+            ElseIf eventCounter > 25 Then
                 durumL.Text = "E abartma yeter artık! :d"
             End If
         End If
@@ -533,9 +557,8 @@ Public Class Form1
             ' OpenFileDialog oluştur
             Dim ofd As New OpenFileDialog()
 
-            ' .txt dosyalarını filtrele
-            ofd.Filter = "Text Files (*.txt)|*.txt|All Files (*.*)|*.*"
-            ofd.Title = "Bir .txt dosyası seçin"
+            ofd.Filter = "All Files (*.*)|*.*"
+            ofd.Title = "Herhangi bir dosya seçin"
 
             ' OpenFileDialog'u göster ve dosya seçimi yapıldıysa devam et
             If ofd.ShowDialog() = DialogResult.OK Then
@@ -585,5 +608,9 @@ Public Class Form1
         metinbox.SelectionStart = metinbox.Text.Length
         metinbox.ScrollToCaret()
 
+    End Sub
+
+    Private Sub AIPrompteriAçToolStripMenuItem_Click(sender As Object, e As EventArgs) Handles AIPrompteriAçToolStripMenuItem.Click
+        AIPrompter.Show()
     End Sub
 End Class
